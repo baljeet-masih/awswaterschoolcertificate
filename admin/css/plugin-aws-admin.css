@@ -1,0 +1,217 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ /*li.attendees-course {
+    position: absolute;
+    right: 215px;
+    top: 90px;
+}
+ 
+.subsubsub li.attendees-csv {
+     float: right;
+    position: absolute;
+    right: 93px;
+    width: 118px;
+    overflow: hidden;
+    height: 28px;
+    top: 91px;
+}
+li.attendees-csv input {
+    position: absolute;
+    z-index: 999;
+    opacity: 0;
+    height: 32px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+ li.attendees-csv:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0073aa;
+    content: 'Import from CSV';
+    border-radius: 2px;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.subsubsub .attendees-upload {
+    position: absolute;
+    right: 9px;
+}*/
+button.button.update_editor_content {
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.dataTables_paginate.paging_two_button {
+    margin-top: 11px;
+}
+.dataTables_paginate.paging_two_button a{
+    margin:0px 6px;
+}
+button.button.aws_send_email {
+    float: left;
+    margin-right: 14px;
+}
+.aws_button_align {
+    /* float: right; */
+    width: 100%;
+    text-align: left;
+}
+input#csv-upload-controller {
+    width: 90px;
+    margin-left: 12px;
+ 
+}
+li input#csv-upload-controller {
+    width: 90px;
+    margin-left: 12px;
+    opacity:0;
+}
+.button.csv-upload-controller {
+    margin-right: 14px;
+}
+
+div#example_wrapper { 
+    padding: 35px 0px;
+}
+
+a.acf-icon.-minus.small.dark {
+    background: #fff !important;
+    color: #3875D7 !important;
+}
+
+
+.subsubsub li.attendees-csv {
+    float: right;
+    position: relative;
+    /* right: 93px; */
+    width: 118px;
+    overflow: hidden;
+    height: 28px;
+    /* top: 91px; */
+        margin-left: 10px;
+}
+li.attendees-csv:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0073aa;
+    content: 'Import from CSV';
+    border-radius: 2px;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    font-weight: bolder;
+    z-index:-1;
+}
+select.select-course {
+    max-width: 236px;
+}
+
+ button#update-from-provider {
+    background: #0073aa;
+    color: #fff;
+    padding: 7px 23px;
+    border-radius: 3px;
+    border: none;
+    top: -5px;
+    position: relative;
+    font-weight: bold;
+}
+
+.subsubsub .attendees-upload {
+    position: absolute;
+    right: 9px;
+    display: none;
+}
+
+.custom_messgae_modal {
+    display: none;
+    position: fixed;
+    z-index: 111111111;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 6%;
+}
+/* Modal Content/Box */
+.custom_messgae_modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.custom_messgae_close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.custom_messgae_close:hover,
+.custom_messgae_close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.custom_messgae_modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 46%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    padding: 27px;
+}
+
+li#menu-posts-attendees, 
+li#menu-posts-course{
+    display:none !important;
+}
+
+span.custom_messgae_modal_close {
+    top: -12px;
+    right: -12px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 27px;
+    text-align: center;
+    line-height: 25px;
+        cursor: pointer;
+}
+
+p.erro_message_email {
+    color: red;
+    font-size: 12px !important;
+}
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
